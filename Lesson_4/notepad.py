@@ -102,6 +102,11 @@ helpMenu.add_command(label="About", command=show_about)
 #Закрепляем объект Меню на главном окне
 root.config(menu=menuBar)
 
+formatMenu = Menu(menuBar)
+menuBar.add_cascade(label="Format", menu=formatMenu)
+formatMenu.add_command(label="Hyphenation", command=show_help)
+formatMenu.add_command(label="Font", command=show_about)
+
 root.mainloop()    
  
 
